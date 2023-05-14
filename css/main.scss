@@ -56,7 +56,7 @@ section.section-1 {
     gap: 2rem;
 
     h1 {
-      font-size: 4rem;
+      font-size: 6rem;
     }
     p {
       width: 60%;
@@ -66,6 +66,52 @@ section.section-1 {
       display: flex;
       justify-content: space-between;
       width: 45%;
+    }
+  }
+}
+section.section-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+
+  .section-2-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.7rem;
+    width: 50%;
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      width: 60%;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+
+    .select-btns-container {
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: solid 1px color(grayishBlue);
+    }
+    .select-btns-container button {
+      padding: 1rem 2rem;
+      border: none;
+      background-color: white;
+      color: color(veryDarkBlue);
+      border-bottom: solid 3px white;
+      transition: color 0.15s, border-bottom 0.15s;
+      cursor: pointer;
+    }
+    .select-btns-container button:hover {
+      color: color(softRed);
+      border-bottom: solid 3px color(softRed);
     }
   }
 }
