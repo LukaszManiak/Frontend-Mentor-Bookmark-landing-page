@@ -207,6 +207,109 @@ section.section-3 .all-extansions-container .extansion-3 {
   align-self: flex-end;
 }
 
+section.section-4 {
+  width: 100%;
+  margin-top: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.section-4 .section-4-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.7rem;
+  width: 50%;
+}
+section.section-4 .section-4-info-container h3 {
+  font-size: 2rem;
+}
+section.section-4 .section-4-info-container p {
+  width: 60%;
+  font-size: 1.6rem;
+  text-align: center;
+}
+section.section-4 .faq-container {
+  width: 60%;
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.section-4 .faq-container .question-box {
+  width: 60%;
+  border-top: solid 1px hsl(229, 8%, 60%);
+  border-bottom: solid 1px hsl(229, 8%, 60%);
+}
+section.section-4 .faq-container .question {
+  padding: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+section.section-4 .faq-container .question p {
+  font-size: 1.7rem;
+}
+section.section-4 .faq-container .question img {
+  width: 5%;
+}
+
+.hidden {
+  display: none;
+}
+
+section.section-5 {
+  width: 100%;
+  height: 300px;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+}
+section.section-5 p {
+  font-size: 1.5rem;
+}
+section.section-5 h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+section.section-5 .input-container {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.section-5 .input-container input {
+  width: 60%;
+}
+
+footer {
+  width: 100%;
+  background-color: hsl(229, 31%, 21%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+footer .footer-links-container ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 nav {
   display: flex;
   justify-content: space-between;

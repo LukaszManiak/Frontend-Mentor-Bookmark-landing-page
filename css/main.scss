@@ -226,6 +226,116 @@ section.section-3 {
     }
   }
 }
+section.section-4 {
+  width: 100%;
+  margin-top: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .section-4-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.7rem;
+    width: 50%;
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      width: 60%;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+  }
+
+  .faq-container {
+    width: 60%;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .question-box {
+      width: 60%;
+      border-top: solid 1px color(grayishBlue);
+      border-bottom: solid 1px color(grayishBlue);
+    }
+    .question {
+      padding: 1.5rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+
+      p {
+        font-size: 1.7rem;
+      }
+      img {
+        width: 5%;
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+section.section-5 {
+  width: 100%;
+  height: 300px;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+  background-color: color(softBlue);
+  color: white;
+
+  p {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .input-container {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    input {
+      width: 60%;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: color(veryDarkBlue);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .footer-links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
 nav {
   display: flex;
   justify-content: space-between;
