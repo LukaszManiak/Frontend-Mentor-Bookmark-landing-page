@@ -114,7 +114,7 @@ section.section-2 .section-2-info-container .select-btns-container button:hover 
   width: 100%;
   flex: 0 0 auto;
   margin-top: 1.7rem;
-  margin-right: 30px;
+  margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,13 +142,69 @@ section.section-2 .section-2-info-container .select-btns-container button:hover 
 .features-slider .features-container .img-sec-back {
   position: absolute;
   z-index: 9;
-  left: -15%;
+  left: -70px;
   bottom: 0px;
   width: 30%;
   height: 80%;
   border-top-right-radius: 150px;
   border-bottom-right-radius: 150px;
   background-color: hsl(231, 69%, 60%);
+}
+
+section.section-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.section-3 .section-3-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.7rem;
+  width: 50%;
+}
+section.section-3 .section-3-info-container h3 {
+  font-size: 2rem;
+}
+section.section-3 .section-3-info-container p {
+  width: 60%;
+  font-size: 1.6rem;
+  text-align: center;
+}
+section.section-3 .all-extansions-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  gap: 2rem;
+  width: 50%;
+  height: 350px;
+}
+section.section-3 .all-extansions-container .extansion-container {
+  width: 25%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 5px 21px -7px hsl(229, 8%, 60%);
+  padding: 1.5rem;
+  gap: 1.3rem;
+}
+section.section-3 .all-extansions-container .extansion-container .dots {
+  width: 110%;
+}
+section.section-3 .all-extansions-container .extansion-1 {
+  align-self: flex-start;
+}
+section.section-3 .all-extansions-container .extansion-2 {
+  align-self: center;
+}
+section.section-3 .all-extansions-container .extansion-3 {
+  align-self: flex-end;
 }
 
 nav {
