@@ -11,7 +11,7 @@ faqContainer.addEventListener('click', function (e) {
   const question = e.target;
   const questionNumber = question.dataset.question;
   if (!questionNumber) return;
-  console.log(e.target);
+
   const answer = document.querySelector(`[data-answer="${questionNumber}"]`);
   console.log(question, answer);
   answer.classList.toggle('hidden');

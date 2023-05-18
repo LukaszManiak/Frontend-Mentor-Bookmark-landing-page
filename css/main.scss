@@ -417,3 +417,26 @@ nav {
   border: solid 1px color(veryDarkBlue);
   color: color(veryDarkBlue);
 }
+
+.arrow-spin {
+  animation: spin 0.3s ease-in forwards;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+.arrow-spin-2 {
+  animation: spin-2 0.3s ease-in forwards;
+}
+@keyframes spin-2 {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
