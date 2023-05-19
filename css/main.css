@@ -108,11 +108,9 @@ section.section-2 .section-2-info-container .select-btns-container button:hover 
 .features-slider {
   display: flex;
   flex-direction: row;
-  overflow: hidden;
 }
 .features-slider .features-container {
   width: 100%;
-  flex: 0 0 auto;
   margin-top: 1.7rem;
   margin-right: 10px;
   display: flex;
@@ -256,7 +254,8 @@ section.section-4 .faq-container .question img {
   width: 25px;
 }
 
-.hidden {
+.hidden,
+.features-container.hidden {
   display: none;
 }
 

@@ -119,11 +119,9 @@ section.section-2 {
 .features-slider {
   display: flex;
   flex-direction: row;
-  overflow: hidden;
 
   .features-container {
     width: 100%;
-    flex: 0 0 auto;
     margin-top: 1.7rem;
     margin-right: 10px;
     display: flex;
@@ -279,7 +277,8 @@ section.section-4 {
   }
 }
 
-.hidden {
+.hidden,
+.features-container.hidden {
   display: none;
 }
 

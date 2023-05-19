@@ -3,6 +3,9 @@
 const faqContainer = document.querySelector('.faq-container');
 const answerBox = document.querySelector('.answer');
 const arrowIcon = document.querySelector('.arrow-icon');
+const featuresBtnContainer = document.querySelector('select-btns-container');
+const featuresSlider = document.querySelector('features-slider');
+const featuresContainer = document.querySelector('features-container');
 
 faqContainer.addEventListener('click', function (e) {
   e.preventDefault();
