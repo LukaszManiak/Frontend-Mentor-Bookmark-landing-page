@@ -2,7 +2,6 @@
 
 const faqContainer = document.querySelector('.faq-container');
 const answerBox = document.querySelector('.answer');
-const arrowIcon = document.querySelector('.arrow-icon');
 const featuresBtnContainer = document.querySelector('.select-btns-container');
 const featuresSlider = document.querySelector('.features-slider');
 const featuresContainers = document.querySelectorAll('.features-container');
@@ -20,6 +19,9 @@ faqContainer.addEventListener('click', function (e) {
   answer.classList.toggle('hidden');
 
   //arrow animation
+  const arrowIcon = document.querySelector(
+    `[data-question-arrow="${questionNumber}"]`
+  );
   if (!answer.classList.contains('hidden')) {
     arrowIcon.classList.add('arrow-spin');
     arrowIcon.classList.remove('arrow-spin-2');
