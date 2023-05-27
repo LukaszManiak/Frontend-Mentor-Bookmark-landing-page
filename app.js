@@ -54,6 +54,13 @@ featuresBtnContainer.addEventListener('click', function (e) {
   });
 });
 
+//mobile navbar
+
+let isOpen = false;
 navBtn.addEventListener('click', function () {
-  navImg.src = 'images/icon-close.svg';
+  //changing navImg src (hamburger/close)
+  !isOpen
+    ? (navImg.src = 'images/icon-close.svg')
+    : (navImg.src = 'images/icon-hamburger.svg');
+  isOpen = !isOpen;
 });

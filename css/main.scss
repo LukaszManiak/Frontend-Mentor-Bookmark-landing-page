@@ -385,6 +385,10 @@ nav {
     display: none;
     cursor: pointer;
 
+    border: none;
+    background-color: white;
+    padding: 1rem;
+
     @include desktop {
       display: block;
     }
