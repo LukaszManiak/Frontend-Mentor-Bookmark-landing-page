@@ -5,6 +5,8 @@ const answerBox = document.querySelector('.answer');
 const featuresBtnContainer = document.querySelector('.select-btns-container');
 const featuresSlider = document.querySelector('.features-slider');
 const featuresContainers = document.querySelectorAll('.features-container');
+const navBtn = document.querySelector('.nav-btn');
+const navImg = document.querySelector('.nav-img');
 console.log(featuresContainers);
 faqContainer.addEventListener('click', function (e) {
   e.preventDefault();
@@ -50,4 +52,8 @@ featuresBtnContainer.addEventListener('click', function (e) {
       f.classList.add('hidden');
     }
   });
+});
+
+navBtn.addEventListener('click', function () {
+  navImg.src = 'images/icon-close.svg';
 });

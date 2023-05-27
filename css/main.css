@@ -348,6 +348,7 @@ nav .nav-links li:hover {
 }
 nav .nav-btn {
   display: none;
+  cursor: pointer;
 }
 @media (max-width: 840px) {
   nav .nav-btn {

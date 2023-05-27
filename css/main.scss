@@ -383,6 +383,7 @@ nav {
   }
   .nav-btn {
     display: none;
+    cursor: pointer;
 
     @include desktop {
       display: block;
