@@ -5,6 +5,7 @@ const answerBox = document.querySelector('.answer');
 const featuresBtnContainer = document.querySelector('.select-btns-container');
 const featuresSlider = document.querySelector('.features-slider');
 const featuresContainers = document.querySelectorAll('.features-container');
+const answers = document.querySelectorAll('.answer');
 const navBtn = document.querySelector('.nav-btn');
 const navImg = document.querySelector('.nav-img');
 console.log(featuresContainers);
@@ -18,7 +19,11 @@ faqContainer.addEventListener('click', function (e) {
 
   const answer = document.querySelector(`[data-answer="${questionNumber}"]`);
   console.log(question, answer);
-  answer.classList.toggle('hidden');
+  // answer.classList.toggle('hidden');
+  answers.forEach(a => {
+    a.classList.add('hidden');
+  });
+  answer.classList.remove('hidden');
 
   //arrow animation
   const arrowIcon = document.querySelector(
