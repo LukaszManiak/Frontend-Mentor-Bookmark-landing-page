@@ -6,6 +6,15 @@ $colors: (
   grayishBlue: hsl(229, 8%, 60%),
   veryDarkBlue: hsl(229, 31%, 21%),
 );
+
+$desktop: 840px;
+
+@mixin desktop {
+  @media (max-width:#{$desktop}) {
+    @content;
+  }
+}
+
 @function color($color-name) {
   @return map-get($colors, $color-name);
 }
@@ -351,7 +360,7 @@ nav {
   width: 70%;
   margin: 30px;
 
-  ul {
+  .nav-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -366,6 +375,17 @@ nav {
     }
     li:hover {
       color: color(softRed);
+    }
+
+    @include desktop {
+      display: none;
+    }
+  }
+  .nav-btn {
+    display: none;
+
+    @include desktop {
+      display: block;
     }
   }
 }

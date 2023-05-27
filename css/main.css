@@ -325,21 +325,34 @@ nav {
   width: 70%;
   margin: 30px;
 }
-nav ul {
+nav .nav-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
   gap: 2rem;
 }
-nav ul li {
+nav .nav-links li {
   cursor: pointer;
   font-size: 1.3rem;
   color: hsl(229, 31%, 21%);
   transition: color 0.15s;
 }
-nav ul li:hover {
+nav .nav-links li:hover {
   color: hsl(0, 94%, 66%);
+}
+@media (max-width: 840px) {
+  nav .nav-links {
+    display: none;
+  }
+}
+nav .nav-btn {
+  display: none;
+}
+@media (max-width: 840px) {
+  nav .nav-btn {
+    display: block;
+  }
 }
 
 .btn-red {
