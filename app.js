@@ -8,7 +8,7 @@ const featuresContainers = document.querySelectorAll('.features-container');
 const answers = document.querySelectorAll('.answer');
 const navBtn = document.querySelector('.nav-btn');
 const navImg = document.querySelector('.nav-img');
-console.log(featuresContainers);
+
 faqContainer.addEventListener('click', function (e) {
   e.preventDefault();
 
@@ -18,24 +18,27 @@ faqContainer.addEventListener('click', function (e) {
   if (!questionNumber) return;
 
   const answer = document.querySelector(`[data-answer="${questionNumber}"]`);
-  console.log(question, answer);
-  // answer.classList.toggle('hidden');
+
   answers.forEach(a => {
-    a.classList.add('hidden');
+    if (!a.classList.contains('hidden')) {
+      const arrowNum = a.dataset.answer;
+      const arrowIcon = document.querySelector(
+        `[data-question-arrow="${arrowNum}"]`
+      );
+      arrowIcon.classList.remove('arrow-spin');
+      arrowIcon.classList.add('arrow-spin-2');
+
+      a.classList.add('hidden');
+    }
   });
-  answer.classList.remove('hidden');
 
   //arrow animation
-  const arrowIcon = document.querySelector(
+  const answerArrow = document.querySelector(
     `[data-question-arrow="${questionNumber}"]`
   );
-  if (!answer.classList.contains('hidden')) {
-    arrowIcon.classList.add('arrow-spin');
-    arrowIcon.classList.remove('arrow-spin-2');
-  } else {
-    arrowIcon.classList.remove('arrow-spin');
-    arrowIcon.classList.add('arrow-spin-2');
-  }
+  answer.classList.remove('hidden');
+  answerArrow.classList.remove('arrow-spin-2');
+  answerArrow.classList.add('arrow-spin');
 });
 
 console.log('js is working');
@@ -46,11 +49,9 @@ featuresBtnContainer.addEventListener('click', function (e) {
   const feature = e.target;
   const featureNumber = feature.dataset.feature;
   if (!featureNumber) return;
-  console.log(feature, featureNumber);
 
   //remove and add hidden class to features containers
   featuresContainers.forEach(f => {
-    console.log(f.dataset.featurecontainer);
     if (f.dataset.featurecontainer == featureNumber) {
       f.classList.remove('hidden');
     } else {
