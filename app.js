@@ -1,4 +1,5 @@
 'use strict';
+console.log('js is working');
 
 const faqContainer = document.querySelector('.faq-container');
 const answerBox = document.querySelector('.answer');
@@ -12,15 +13,14 @@ const navImg = document.querySelector('.nav-img');
 faqContainer.addEventListener('click', function (e) {
   e.preventDefault();
 
-  //showing answer
   const question = e.target;
   const questionNumber = question.dataset.question;
   if (!questionNumber) return;
 
-  const answer = document.querySelector(`[data-answer="${questionNumber}"]`);
-
+  //hiding all answers
   answers.forEach(a => {
     if (!a.classList.contains('hidden')) {
+      //arrow animation
       const arrowNum = a.dataset.answer;
       const arrowIcon = document.querySelector(
         `[data-question-arrow="${arrowNum}"]`
@@ -28,11 +28,13 @@ faqContainer.addEventListener('click', function (e) {
       arrowIcon.classList.remove('arrow-spin');
       arrowIcon.classList.add('arrow-spin-2');
 
+      //hiding answer
       a.classList.add('hidden');
     }
   });
 
-  //arrow animation
+  // showing selected answer
+  const answer = document.querySelector(`[data-answer="${questionNumber}"]`);
   const answerArrow = document.querySelector(
     `[data-question-arrow="${questionNumber}"]`
   );
@@ -41,7 +43,6 @@ faqContainer.addEventListener('click', function (e) {
   answerArrow.classList.add('arrow-spin');
 });
 
-console.log('js is working');
 featuresBtnContainer.addEventListener('click', function (e) {
   e.preventDefault();
 
