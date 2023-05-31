@@ -9,6 +9,11 @@ html {
   font-size: 62.5%;
   font-family: "Rubik";
 }
+@media (max-width: 840px) {
+  html {
+    font-size: 48%;
+  }
+}
 
 body,
 main {

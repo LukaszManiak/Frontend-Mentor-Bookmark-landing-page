@@ -33,6 +33,10 @@ $desktop: 840px;
 html {
   font-size: 62.5%;
   font-family: 'Rubik';
+
+  @include desktop {
+    font-size: 48%;
+  }
 }
 body,
 main {
