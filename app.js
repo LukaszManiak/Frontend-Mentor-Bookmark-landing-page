@@ -65,6 +65,14 @@ featuresBtnContainer.addEventListener('click', function (e) {
 
 //mobile navbar
 
+//showing menu by clicking nav button
+navBtn.addEventListener('click', function (e) {
+  navMenuBackground.classList.toggle('hidden');
+  navBtn.classList.toggle('blue-background');
+  navLinks.classList.toggle('show');
+});
+
+//menu icon
 let isOpen = false;
 navBtn.addEventListener('click', function () {
   //changing navImg src (hamburger/close)
