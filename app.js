@@ -8,7 +8,9 @@ const featuresSlider = document.querySelector('.features-slider');
 const featuresContainers = document.querySelectorAll('.features-container');
 const answers = document.querySelectorAll('.answer');
 const navBtn = document.querySelector('.nav-btn');
+const navMenuBackground = document.querySelector('.nav-bg');
 const navImg = document.querySelector('.nav-img');
+const navLinks = document.querySelector('.nav-links');
 
 faqContainer.addEventListener('click', function (e) {
   e.preventDefault();

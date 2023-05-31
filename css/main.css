@@ -319,13 +319,23 @@ footer .footer-icons-container {
 }
 
 nav {
+  position: relative;
+  z-index: 12;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 70%;
   margin: 30px;
 }
+nav div {
+  z-index: 12;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 nav .nav-links {
+  z-index: 12;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -338,8 +348,44 @@ nav .nav-links li {
   color: hsl(229, 31%, 21%);
   transition: color 0.15s;
 }
+@media (max-width: 840px) {
+  nav .nav-links li {
+    text-align: center;
+    color: white;
+    border-top: solid 1px white;
+    padding-top: 1.5rem;
+  }
+}
 nav .nav-links li:hover {
   color: hsl(0, 94%, 66%);
+}
+nav .nav-links button {
+  border: solid 1px hsl(0, 94%, 66%);
+  border-radius: 10px;
+  background-color: hsl(0, 94%, 66%);
+  padding: 1rem 2rem;
+  color: white;
+  transition: background-color 0.15s, color 0.15s;
+  cursor: pointer;
+}
+@media (max-width: 840px) {
+  nav .nav-links button {
+    border: solid 1px white;
+    background-color: hsl(229, 31%, 21%);
+    color: white;
+  }
+}
+nav .nav-links button:hover {
+  background-color: white;
+  border: solid 1px hsl(0, 94%, 66%);
+  color: hsl(0, 94%, 66%);
+}
+@media (max-width: 840px) {
+  nav .nav-links button:hover {
+    background-color: hsl(229, 31%, 21%);
+    border: solid 1px hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+  }
 }
 @media (max-width: 840px) {
   nav .nav-links {
@@ -357,6 +403,36 @@ nav .nav-btn {
   nav .nav-btn {
     display: block;
   }
+}
+@media (max-width: 840px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+.nav-bg {
+  position: absolute;
+  top: -30px;
+  bottom: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(229, 31%, 21%);
+  opacity: 0.8;
+}
+
+.nav-btn.blue-background {
+  background-color: hsl(229, 31%, 21%);
+}
+
+.nav-links.show {
+  z-index: 12;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
 }
 
 .btn-red {
