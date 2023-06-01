@@ -11,7 +11,7 @@ html {
 }
 @media (max-width: 840px) {
   html {
-    font-size: 48%;
+    font-size: 50%;
   }
 }
 
@@ -325,7 +325,7 @@ section.section-5 .input-container button {
 
 footer {
   width: 100%;
-  padding: 2rem;
+  padding: 3rem 2rem;
   background-color: hsl(229, 31%, 21%);
   color: white;
   display: flex;

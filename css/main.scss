@@ -35,7 +35,7 @@ html {
   font-family: 'Rubik';
 
   @include desktop {
-    font-size: 48%;
+    font-size: 50%;
   }
 }
 body,
@@ -367,7 +367,7 @@ section.section-5 {
 
 footer {
   width: 100%;
-  padding: 2rem;
+  padding: 3rem 2rem;
   background-color: color(veryDarkBlue);
   color: white;
   display: flex;
