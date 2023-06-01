@@ -43,7 +43,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 section {
@@ -51,7 +50,7 @@ section {
 }
 section.section-1 {
   margin-top: 98px;
-  width: 85%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,7 +64,7 @@ section.section-1 {
   .img-back {
     position: absolute;
     z-index: 9;
-    right: -20%;
+    right: 0;
     bottom: 0;
     width: 40%;
     height: 60%;
@@ -146,7 +145,7 @@ section.section-2 {
 
   .features-container {
     width: 100%;
-    margin-top: 1.7rem;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -231,8 +230,15 @@ section.section-3 {
       padding: 1.5rem;
       gap: 1.3rem;
 
+      img {
+        width: 60%;
+      }
+
       .dots {
         width: 110%;
+      }
+      button {
+        width: 100%;
       }
     }
 
@@ -333,15 +339,19 @@ section.section-5 {
   }
 
   .input-container {
-    width: 24%;
+    width: 25%;
     display: flex;
     justify-content: space-between;
+    gap: 5%;
     align-items: center;
     input {
-      width: 65%;
+      width: 60%;
       padding: 1rem 2rem;
       border: none;
       border-radius: 10px;
+    }
+    button {
+      width: 35%;
     }
   }
 }
@@ -352,21 +362,27 @@ footer {
   background-color: color(veryDarkBlue);
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
+  .footer-content-conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
   .footer-links-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1.7rem;
+    gap: 6rem;
 
     ul {
       list-style: none;
       display: flex;
       justify-content: space-around;
       align-items: center;
-      gap: 1.7rem;
+      gap: 3rem;
       font-size: 1.6rem;
 
       li {
@@ -384,7 +400,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 1.7rem;
+    gap: 3rem;
 
     path {
       transition: fill 0.15s;
@@ -402,8 +418,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
-  margin: 30px;
+  width: 100%;
+  padding: 30px 15%;
 
   div {
     z-index: 12;
@@ -518,6 +534,8 @@ nav {
 }
 
 .btn-red {
+  text-align: center;
+  font-size: 1.5rem;
   border: solid 1px color(softRed);
   border-radius: 10px;
   background-color: color(softRed);
@@ -533,6 +551,8 @@ nav {
 }
 
 .btn-blue {
+  text-align: center;
+  font-size: 1.5rem;
   border: solid 1px color(softBlue);
   border-radius: 10px;
   background-color: color(softBlue);
@@ -549,6 +569,8 @@ nav {
 }
 
 .btn-dark {
+  text-align: center;
+  font-size: 1.5rem;
   border: solid 1px color(veryDarkBlue);
   border-radius: 10px;
   background-color: color(veryDarkBlue);

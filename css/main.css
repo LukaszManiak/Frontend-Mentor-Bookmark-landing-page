@@ -20,7 +20,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 section {
@@ -29,7 +28,6 @@ section {
 
 section.section-1 {
   margin-top: 98px;
-  width: 85%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,7 +41,7 @@ section.section-1 img {
 section.section-1 .img-back {
   position: absolute;
   z-index: 9;
-  right: -20%;
+  right: 0;
   bottom: 0;
   width: 40%;
   height: 60%;
@@ -121,7 +119,7 @@ section.section-2 .section-2-info-container .select-btns-container button:hover 
 }
 .features-slider .features-container {
   width: 100%;
-  margin-top: 1.7rem;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,8 +199,14 @@ section.section-3 .all-extansions-container .extansion-container {
   padding: 1.5rem;
   gap: 1.3rem;
 }
+section.section-3 .all-extansions-container .extansion-container img {
+  width: 60%;
+}
 section.section-3 .all-extansions-container .extansion-container .dots {
   width: 110%;
+}
+section.section-3 .all-extansions-container .extansion-container button {
+  width: 100%;
 }
 section.section-3 .all-extansions-container .extansion-1 {
   align-self: flex-start;
@@ -294,16 +298,20 @@ section.section-5 h3 {
   text-align: center;
 }
 section.section-5 .input-container {
-  width: 24%;
+  width: 25%;
   display: flex;
   justify-content: space-between;
+  gap: 5%;
   align-items: center;
 }
 section.section-5 .input-container input {
-  width: 65%;
+  width: 60%;
   padding: 1rem 2rem;
   border: none;
   border-radius: 10px;
+}
+section.section-5 .input-container button {
+  width: 35%;
 }
 
 footer {
@@ -312,21 +320,27 @@ footer {
   background-color: hsl(229, 31%, 21%);
   color: white;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-content-conteiner {
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 80%;
 }
 footer .footer-links-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1.7rem;
+  gap: 6rem;
 }
 footer .footer-links-container ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 1.7rem;
+  gap: 3rem;
   font-size: 1.6rem;
 }
 footer .footer-links-container ul li {
@@ -341,7 +355,7 @@ footer .footer-icons-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 1.7rem;
+  gap: 3rem;
 }
 footer .footer-icons-container path {
   transition: fill 0.15s;
@@ -358,8 +372,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
-  margin: 30px;
+  width: 100%;
+  padding: 30px 15%;
 }
 nav div {
   z-index: 12;
@@ -480,6 +494,8 @@ nav .nav-btn {
 }
 
 .btn-red {
+  text-align: center;
+  font-size: 1.5rem;
   border: solid 1px hsl(0, 94%, 66%);
   border-radius: 10px;
   background-color: hsl(0, 94%, 66%);
@@ -496,6 +512,8 @@ nav .nav-btn {
 }
 
 .btn-blue {
+  text-align: center;
+  font-size: 1.5rem;
   border: solid 1px hsl(231, 69%, 60%);
   border-radius: 10px;
   background-color: hsl(231, 69%, 60%);
@@ -512,6 +530,8 @@ nav .nav-btn {
 }
 
 .btn-dark {
+  text-align: center;
+  font-size: 1.5rem;
   border: solid 1px hsl(229, 31%, 21%);
   border-radius: 10px;
   background-color: hsl(229, 31%, 21%);
