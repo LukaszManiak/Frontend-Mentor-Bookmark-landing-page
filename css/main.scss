@@ -329,12 +329,15 @@ section.section-5 {
   }
 
   .input-container {
-    width: 20%;
+    width: 24%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     input {
-      width: 60%;
+      width: 65%;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 10px;
     }
   }
 }
@@ -361,6 +364,15 @@ footer {
       align-items: center;
       gap: 1.7rem;
       font-size: 1.6rem;
+
+      li {
+        transition: color 0.15s;
+      }
+
+      li:hover {
+        cursor: pointer;
+        color: color(softRed);
+      }
     }
   }
   .footer-icons-container {
@@ -369,6 +381,14 @@ footer {
     justify-content: space-around;
     align-items: center;
     gap: 1.7rem;
+
+    path {
+      transition: fill 0.15s;
+    }
+    svg:hover path {
+      cursor: pointer;
+      fill: color(softRed);
+    }
   }
 }
 nav {

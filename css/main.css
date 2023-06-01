@@ -290,13 +290,16 @@ section.section-5 h3 {
   text-align: center;
 }
 section.section-5 .input-container {
-  width: 20%;
+  width: 24%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 section.section-5 .input-container input {
-  width: 60%;
+  width: 65%;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
 }
 
 footer {
@@ -322,12 +325,26 @@ footer .footer-links-container ul {
   gap: 1.7rem;
   font-size: 1.6rem;
 }
+footer .footer-links-container ul li {
+  transition: color 0.15s;
+}
+footer .footer-links-container ul li:hover {
+  cursor: pointer;
+  color: hsl(0, 94%, 66%);
+}
 footer .footer-icons-container {
   list-style: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 1.7rem;
+}
+footer .footer-icons-container path {
+  transition: fill 0.15s;
+}
+footer .footer-icons-container svg:hover path {
+  cursor: pointer;
+  fill: hsl(0, 94%, 66%);
 }
 
 nav {
