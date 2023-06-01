@@ -58,7 +58,7 @@ section.section-1 {
   z-index: 10;
 
   img {
-    width: 50%;
+    width: 40%;
     z-index: 10;
   }
   .img-back {
@@ -66,7 +66,7 @@ section.section-1 {
     z-index: 9;
     right: 0;
     bottom: 0;
-    width: 40%;
+    width: 30%;
     height: 60%;
     border-top-left-radius: 150px;
     border-bottom-left-radius: 150px;
@@ -75,6 +75,7 @@ section.section-1 {
   .section-1-info-container {
     display: flex;
     flex-direction: column;
+    padding: 0 4rem 0 15rem;
     width: 60%;
     gap: 2rem;
 
@@ -87,8 +88,11 @@ section.section-1 {
     }
     div {
       display: flex;
-      justify-content: space-between;
-      width: 45%;
+      width: 100%;
+
+      button {
+        margin-right: 30px;
+      }
     }
   }
 }
@@ -122,6 +126,10 @@ section.section-2 {
       display: flex;
       justify-content: space-between;
       border-bottom: solid 1px color(grayishBlue);
+
+      @include desktop {
+        width: 100%;
+      }
     }
     .select-btns-container button {
       padding: 1rem 2rem;
@@ -142,6 +150,7 @@ section.section-2 {
 .features-slider {
   display: flex;
   flex-direction: row;
+  width: 100%;
 
   .features-container {
     width: 100%;

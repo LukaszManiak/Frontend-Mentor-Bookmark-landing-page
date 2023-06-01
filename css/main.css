@@ -35,7 +35,7 @@ section.section-1 {
   z-index: 10;
 }
 section.section-1 img {
-  width: 50%;
+  width: 40%;
   z-index: 10;
 }
 section.section-1 .img-back {
@@ -43,7 +43,7 @@ section.section-1 .img-back {
   z-index: 9;
   right: 0;
   bottom: 0;
-  width: 40%;
+  width: 30%;
   height: 60%;
   border-top-left-radius: 150px;
   border-bottom-left-radius: 150px;
@@ -52,6 +52,7 @@ section.section-1 .img-back {
 section.section-1 .section-1-info-container {
   display: flex;
   flex-direction: column;
+  padding: 0 4rem 0 15rem;
   width: 60%;
   gap: 2rem;
 }
@@ -64,8 +65,10 @@ section.section-1 .section-1-info-container p {
 }
 section.section-1 .section-1-info-container div {
   display: flex;
-  justify-content: space-between;
-  width: 45%;
+  width: 100%;
+}
+section.section-1 .section-1-info-container div button {
+  margin-right: 30px;
 }
 
 section.section-2 {
@@ -99,6 +102,11 @@ section.section-2 .section-2-info-container .select-btns-container {
   justify-content: space-between;
   border-bottom: solid 1px hsl(229, 8%, 60%);
 }
+@media (max-width: 840px) {
+  section.section-2 .section-2-info-container .select-btns-container {
+    width: 100%;
+  }
+}
 section.section-2 .section-2-info-container .select-btns-container button {
   padding: 1rem 2rem;
   border: none;
@@ -116,6 +124,7 @@ section.section-2 .section-2-info-container .select-btns-container button:hover 
 .features-slider {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 .features-slider .features-container {
   width: 100%;
