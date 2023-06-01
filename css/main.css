@@ -243,7 +243,10 @@ section.section-4 .faq-container {
 section.section-4 .faq-container .question-box {
   width: 60%;
   border-top: solid 1px hsl(229, 8%, 60%);
-  border-bottom: solid 1px hsl(229, 8%, 60%);
+}
+section.section-4 .faq-container .question-box .answer {
+  padding: 1.5rem;
+  font-size: 1.5rem;
 }
 section.section-4 .faq-container .question {
   padding: 1.5rem;
@@ -257,6 +260,9 @@ section.section-4 .faq-container .question p {
 }
 section.section-4 .faq-container .question img {
   width: 25px;
+}
+section.section-4 .faq-container .last-question {
+  border-bottom: solid 1px hsl(229, 8%, 60%);
 }
 
 .hidden,

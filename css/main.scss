@@ -277,7 +277,11 @@ section.section-4 {
     .question-box {
       width: 60%;
       border-top: solid 1px color(grayishBlue);
-      border-bottom: solid 1px color(grayishBlue);
+
+      .answer {
+        padding: 1.5rem;
+        font-size: 1.5rem;
+      }
     }
     .question {
       padding: 1.5rem;
@@ -292,6 +296,9 @@ section.section-4 {
       img {
         width: 25px;
       }
+    }
+    .last-question {
+      border-bottom: solid 1px color(grayishBlue);
     }
   }
 }
