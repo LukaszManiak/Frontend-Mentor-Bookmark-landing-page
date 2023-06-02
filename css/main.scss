@@ -7,7 +7,8 @@ $colors: (
   veryDarkBlue: hsl(229, 31%, 21%),
 );
 
-$desktop: 840px;
+$desktop: 1100px;
+$mobile: 840px;
 
 @mixin desktop {
   @media (max-width:#{$desktop}) {
@@ -17,6 +18,12 @@ $desktop: 840px;
 
 @mixin hide {
   @media (min-width:#{$desktop}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width:#{$desktop}) {
     @content;
   }
 }
@@ -75,7 +82,7 @@ section.section-1 {
   .section-1-info-container {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 35%;
     gap: 2rem;
 
     h1 {
@@ -96,7 +103,6 @@ section.section-1 {
   }
 }
 section.section-2 {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -168,8 +174,8 @@ section.section-2 {
       flex-direction: column;
       align-items: flex-start;
       gap: 1.3rem;
-      width: 40%;
-      margin-left: 70px;
+      width: 50%;
+      padding-left: 70px;
 
       h3 {
         font-size: 2rem;
@@ -220,10 +226,9 @@ section.section-3 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 4rem;
-    gap: 2rem;
-    width: 50%;
+    width: 60%;
     height: 350px;
 
     .extansion-container {
@@ -231,6 +236,7 @@ section.section-3 {
       height: auto;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       align-items: center;
       border: none;
       border-radius: 10px;
@@ -239,9 +245,15 @@ section.section-3 {
       gap: 1.3rem;
 
       img {
-        width: 60%;
+        width: 50%;
       }
-
+      p {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      .add-p {
+        font-weight: bold;
+      }
       .dots {
         width: 110%;
       }
@@ -263,7 +275,6 @@ section.section-3 {
 }
 section.section-4 {
   width: 100%;
-  margin-top: 1.7rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -347,19 +358,20 @@ section.section-5 {
   }
 
   .input-container {
-    width: 25%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    gap: 5%;
+    justify-content: center;
     align-items: center;
+
     input {
-      width: 60%;
+      width: 20%;
       padding: 1rem 2rem;
       border: none;
       border-radius: 10px;
+      margin-right: 20px;
     }
     button {
-      width: 35%;
+      width: 10%;
     }
   }
 }
@@ -542,7 +554,6 @@ nav {
 }
 
 .btn-red {
-  text-align: center;
   font-size: 1.5rem;
   border: solid 1px color(softRed);
   border-radius: 10px;
@@ -559,7 +570,6 @@ nav {
 }
 
 .btn-blue {
-  text-align: center;
   font-size: 1.5rem;
   border: solid 1px color(softBlue);
   border-radius: 10px;
@@ -577,7 +587,6 @@ nav {
 }
 
 .btn-dark {
-  text-align: center;
   font-size: 1.5rem;
   border: solid 1px color(veryDarkBlue);
   border-radius: 10px;

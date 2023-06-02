@@ -9,7 +9,7 @@ html {
   font-size: 62.5%;
   font-family: "Rubik";
 }
-@media (max-width: 840px) {
+@media (max-width: 1100px) {
   html {
     font-size: 50%;
   }
@@ -52,7 +52,7 @@ section.section-1 .img-back {
 section.section-1 .section-1-info-container {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 35%;
   gap: 2rem;
 }
 section.section-1 .section-1-info-container h1 {
@@ -71,7 +71,6 @@ section.section-1 .section-1-info-container div button {
 }
 
 section.section-2 {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -101,7 +100,7 @@ section.section-2 .section-2-info-container .select-btns-container {
   justify-content: space-between;
   border-bottom: solid 1px hsl(229, 8%, 60%);
 }
-@media (max-width: 840px) {
+@media (max-width: 1100px) {
   section.section-2 .section-2-info-container .select-btns-container {
     width: 100%;
   }
@@ -142,8 +141,8 @@ section.section-2 .section-2-info-container .select-btns-container button:hover 
   flex-direction: column;
   align-items: flex-start;
   gap: 1.3rem;
-  width: 40%;
-  margin-left: 70px;
+  width: 50%;
+  padding-left: 70px;
 }
 .features-slider .features-container div h3 {
   font-size: 2rem;
@@ -189,10 +188,9 @@ section.section-3 .all-extansions-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 4rem;
-  gap: 2rem;
-  width: 50%;
+  width: 60%;
   height: 350px;
 }
 section.section-3 .all-extansions-container .extansion-container {
@@ -200,6 +198,7 @@ section.section-3 .all-extansions-container .extansion-container {
   height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   border: none;
   border-radius: 10px;
@@ -208,7 +207,14 @@ section.section-3 .all-extansions-container .extansion-container {
   gap: 1.3rem;
 }
 section.section-3 .all-extansions-container .extansion-container img {
-  width: 60%;
+  width: 50%;
+}
+section.section-3 .all-extansions-container .extansion-container p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+section.section-3 .all-extansions-container .extansion-container .add-p {
+  font-weight: bold;
 }
 section.section-3 .all-extansions-container .extansion-container .dots {
   width: 110%;
@@ -228,7 +234,6 @@ section.section-3 .all-extansions-container .extansion-3 {
 
 section.section-4 {
   width: 100%;
-  margin-top: 1.7rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -306,20 +311,20 @@ section.section-5 h3 {
   text-align: center;
 }
 section.section-5 .input-container {
-  width: 25%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  gap: 5%;
+  justify-content: center;
   align-items: center;
 }
 section.section-5 .input-container input {
-  width: 60%;
+  width: 20%;
   padding: 1rem 2rem;
   border: none;
   border-radius: 10px;
+  margin-right: 20px;
 }
 section.section-5 .input-container button {
-  width: 35%;
+  width: 10%;
 }
 
 footer {
@@ -404,7 +409,7 @@ nav .nav-links li {
   color: hsl(229, 31%, 21%);
   transition: color 0.15s;
 }
-@media (max-width: 840px) {
+@media (max-width: 1100px) {
   nav .nav-links li {
     text-align: center;
     color: white;
@@ -424,7 +429,7 @@ nav .nav-links button {
   transition: background-color 0.15s, color 0.15s;
   cursor: pointer;
 }
-@media (max-width: 840px) {
+@media (max-width: 1100px) {
   nav .nav-links button {
     border: solid 1px white;
     background-color: hsl(229, 31%, 21%);
@@ -436,14 +441,14 @@ nav .nav-links button:hover {
   border: solid 1px hsl(0, 94%, 66%);
   color: hsl(0, 94%, 66%);
 }
-@media (max-width: 840px) {
+@media (max-width: 1100px) {
   nav .nav-links button:hover {
     background-color: hsl(229, 31%, 21%);
     border: solid 1px hsl(0, 94%, 66%);
     color: hsl(0, 94%, 66%);
   }
 }
-@media (max-width: 840px) {
+@media (max-width: 1100px) {
   nav .nav-links {
     display: none;
   }
@@ -455,12 +460,12 @@ nav .nav-btn {
   background-color: white;
   padding: 1rem;
 }
-@media (max-width: 840px) {
+@media (max-width: 1100px) {
   nav .nav-btn {
     display: block;
   }
 }
-@media (max-width: 840px) {
+@media (max-width: 1100px) {
   nav {
     flex-direction: column;
   }
@@ -476,7 +481,7 @@ nav .nav-btn {
   background-color: hsl(229, 31%, 21%);
   opacity: 0.8;
 }
-@media (min-width: 840px) {
+@media (min-width: 1100px) {
   .nav-bg {
     display: none;
   }
@@ -495,14 +500,13 @@ nav .nav-btn {
   list-style: none;
   gap: 2rem;
 }
-@media (min-width: 840px) {
+@media (min-width: 1100px) {
   .nav-links.show {
     flex-direction: row;
   }
 }
 
 .btn-red {
-  text-align: center;
   font-size: 1.5rem;
   border: solid 1px hsl(0, 94%, 66%);
   border-radius: 10px;
@@ -520,7 +524,6 @@ nav .nav-btn {
 }
 
 .btn-blue {
-  text-align: center;
   font-size: 1.5rem;
   border: solid 1px hsl(231, 69%, 60%);
   border-radius: 10px;
@@ -538,7 +541,6 @@ nav .nav-btn {
 }
 
 .btn-dark {
-  text-align: center;
   font-size: 1.5rem;
   border: solid 1px hsl(229, 31%, 21%);
   border-radius: 10px;
