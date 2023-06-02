@@ -11,6 +11,7 @@ const navBtn = document.querySelector('.nav-btn');
 const navMenuBackground = document.querySelector('.nav-bg');
 const navImg = document.querySelector('.nav-img');
 const navLinks = document.querySelector('.nav-links');
+const navLogo = document.querySelector('.nav-bookmark-logo');
 
 faqContainer.addEventListener('click', function (e) {
   e.preventDefault();
@@ -66,18 +67,27 @@ featuresBtnContainer.addEventListener('click', function (e) {
 //mobile navbar
 
 //showing menu by clicking nav button
-navBtn.addEventListener('click', function (e) {
+navBtn.addEventListener('click', function () {
   navMenuBackground.classList.toggle('hidden');
   navBtn.classList.toggle('blue-background');
   navLinks.classList.toggle('show');
+  navElementsStyling();
 });
 
 //menu icon
+
 let isOpen = false;
-navBtn.addEventListener('click', function () {
-  //changing navImg src (hamburger/close)
+
+const navElementsStyling = function () {
+  //changing navBtn
   !isOpen
     ? (navImg.src = 'images/icon-close.svg')
     : (navImg.src = 'images/icon-hamburger.svg');
+
+  //changing bookmark
+  !isOpen
+    ? (navLogo.src = 'images/logo-bookmark-white.svg')
+    : (navLogo.src = 'images/logo-bookmark.svg');
+
   isOpen = !isOpen;
-});
+};
