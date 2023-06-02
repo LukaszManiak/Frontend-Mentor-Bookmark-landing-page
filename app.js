@@ -1,12 +1,14 @@
 'use strict';
 console.log('js is working');
 
+//elements
 const faqContainer = document.querySelector('.faq-container');
 const answerBox = document.querySelector('.answer');
 const featuresBtnContainer = document.querySelector('.select-btns-container');
 const featuresSlider = document.querySelector('.features-slider');
 const featuresContainers = document.querySelectorAll('.features-container');
 const featuresBtns = document.querySelectorAll('.feature-btn');
+const arrowPaths = document.querySelectorAll('.path');
 const answers = document.querySelectorAll('.answer');
 const navBtn = document.querySelector('.nav-btn');
 const navMenuBackground = document.querySelector('.nav-bg');
@@ -32,10 +34,17 @@ faqContainer.addEventListener('click', function (e) {
       arrowIcon.classList.remove('arrow-spin');
       arrowIcon.classList.add('arrow-spin-2');
 
-      console.log(arrowIcon);
-
       //hiding answer
       a.classList.add('hidden');
+    }
+  });
+
+  //changing arrow colors red/blue
+  arrowPaths.forEach(path => {
+    if (path.dataset.path == questionNumber) {
+      path.style.stroke = 'hsl(0, 94%, 66%)';
+    } else {
+      path.style.stroke = '#5267DF';
     }
   });
 
@@ -47,10 +56,6 @@ faqContainer.addEventListener('click', function (e) {
   answer.classList.remove('hidden');
   answerArrow.classList.remove('arrow-spin-2');
   answerArrow.classList.add('arrow-spin');
-});
-
-answers.forEach(a => {
-  console.log(a);
 });
 
 featuresBtnContainer.addEventListener('click', function (e) {
