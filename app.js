@@ -84,10 +84,19 @@ const navElementsStyling = function () {
     ? (navImg.src = 'images/icon-close.svg')
     : (navImg.src = 'images/icon-hamburger.svg');
 
-  //changing bookmark
+  //changing bookmark logo
   !isOpen
     ? (navLogo.src = 'images/logo-bookmark-white.svg')
     : (navLogo.src = 'images/logo-bookmark.svg');
-
   isOpen = !isOpen;
 };
+
+//setting appropriate bookmark logo
+window.addEventListener('resize', function () {
+  if (isOpen == true && window.innerWidth >= 1100) {
+    navLogo.src = 'images/logo-bookmark.svg';
+  }
+  if (isOpen == true && window.innerWidth <= 1100) {
+    navLogo.src = 'images/logo-bookmark-white.svg';
+  }
+});

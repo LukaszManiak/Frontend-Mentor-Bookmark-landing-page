@@ -651,25 +651,27 @@ nav {
       border-radius: 10px;
       background-color: color(softRed);
       padding: 1rem 2rem;
+      font-weight: bold;
       color: white;
-      transition: background-color 0.15s, color 0.15s;
+      transition: background-color 0.15s, color 0.15s, border 0.15s,
+        box-shadow 0.15s;
       cursor: pointer;
 
       @include desktop {
-        border: solid 1px white;
-        background-color: color(veryDarkBlue);
-        color: white;
+        border: solid 2px color(softRed);
+        background-color: hsla(229, 31%, 21%, 0.4);
+        color: color(softRed);
         width: 100%;
       }
     }
     button:hover {
       background-color: white;
-      border: solid 1px color(softRed);
       color: color(softRed);
 
       @include desktop {
-        background-color: color(veryDarkBlue);
-        border: solid 1px color(softRed);
+        background-color: hsla(229, 31%, 21%, 0.4);
+        border: solid 2px color(softRed);
+        box-shadow: 0px 0px 0px 3px color(softRed);
         color: color(softRed);
       }
     }
@@ -686,12 +688,18 @@ nav {
     cursor: pointer;
 
     border: none;
+    border-radius: 50%;
     background-color: white;
     padding: 1rem;
+
+    transition: box-shadow 0.15s;
 
     @include desktop {
       display: block;
     }
+  }
+  .nav-btn:hover {
+    box-shadow: 0px 0px 0px 3px color(softRed);
   }
   @include desktop {
     flex-direction: column;
@@ -713,7 +721,9 @@ nav {
   }
 }
 .nav-btn.blue-background {
-  background-color: hsla(229, 31%, 21%, 0.8);
+  align-items: center;
+  border-radius: 50%;
+  background-color: hsla(229, 31%, 21%, 0.4);
 }
 
 .nav-links.show {

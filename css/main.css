@@ -660,27 +660,28 @@ nav .nav-links button {
   border-radius: 10px;
   background-color: hsl(0, 94%, 66%);
   padding: 1rem 2rem;
+  font-weight: bold;
   color: white;
-  transition: background-color 0.15s, color 0.15s;
+  transition: background-color 0.15s, color 0.15s, border 0.15s, box-shadow 0.15s;
   cursor: pointer;
 }
 @media (max-width: 1100px) {
   nav .nav-links button {
-    border: solid 1px white;
-    background-color: hsl(229, 31%, 21%);
-    color: white;
+    border: solid 2px hsl(0, 94%, 66%);
+    background-color: hsla(229, 31%, 21%, 0.4);
+    color: hsl(0, 94%, 66%);
     width: 100%;
   }
 }
 nav .nav-links button:hover {
   background-color: white;
-  border: solid 1px hsl(0, 94%, 66%);
   color: hsl(0, 94%, 66%);
 }
 @media (max-width: 1100px) {
   nav .nav-links button:hover {
-    background-color: hsl(229, 31%, 21%);
-    border: solid 1px hsl(0, 94%, 66%);
+    background-color: hsla(229, 31%, 21%, 0.4);
+    border: solid 2px hsl(0, 94%, 66%);
+    box-shadow: 0px 0px 0px 3px hsl(0, 94%, 66%);
     color: hsl(0, 94%, 66%);
   }
 }
@@ -696,13 +697,18 @@ nav .nav-btn {
   display: none;
   cursor: pointer;
   border: none;
+  border-radius: 50%;
   background-color: white;
   padding: 1rem;
+  transition: box-shadow 0.15s;
 }
 @media (max-width: 1100px) {
   nav .nav-btn {
     display: block;
   }
+}
+nav .nav-btn:hover {
+  box-shadow: 0px 0px 0px 3px hsl(0, 94%, 66%);
 }
 @media (max-width: 1100px) {
   nav {
@@ -727,7 +733,9 @@ nav .nav-btn {
 }
 
 .nav-btn.blue-background {
-  background-color: hsla(229, 31%, 21%, 0.8);
+  align-items: center;
+  border-radius: 50%;
+  background-color: hsla(229, 31%, 21%, 0.4);
 }
 
 .nav-links.show {
