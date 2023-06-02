@@ -439,14 +439,8 @@ section.section-4 .faq-container .question p {
 section.section-4 .faq-container .question img {
   width: 25px;
 }
-section.section-4 .faq-container .question svg path {
-  transition: stroke 0.15s;
-}
 section.section-4 .faq-container .question:hover p {
   color: hsl(0, 94%, 66%);
-}
-section.section-4 .faq-container .question:hover svg path {
-  stroke: hsl(0, 94%, 66%);
 }
 section.section-4 .faq-container .last-question {
   border-bottom: solid 1px hsl(229, 8%, 60%);
@@ -802,6 +796,11 @@ nav .nav-btn:hover {
   background-color: white;
   border: solid 1px hsl(229, 31%, 21%);
   color: hsl(229, 31%, 21%);
+}
+
+section.section-2 .section-2-info-container .select-btns-container button.red-color {
+  color: hsl(0, 94%, 66%);
+  border-bottom: solid 3px hsl(0, 94%, 66%);
 }
 
 .arrow-spin {

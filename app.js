@@ -6,6 +6,7 @@ const answerBox = document.querySelector('.answer');
 const featuresBtnContainer = document.querySelector('.select-btns-container');
 const featuresSlider = document.querySelector('.features-slider');
 const featuresContainers = document.querySelectorAll('.features-container');
+const featuresBtns = document.querySelectorAll('.feature-btn');
 const answers = document.querySelectorAll('.answer');
 const navBtn = document.querySelector('.nav-btn');
 const navMenuBackground = document.querySelector('.nav-bg');
@@ -31,6 +32,8 @@ faqContainer.addEventListener('click', function (e) {
       arrowIcon.classList.remove('arrow-spin');
       arrowIcon.classList.add('arrow-spin-2');
 
+      console.log(arrowIcon);
+
       //hiding answer
       a.classList.add('hidden');
     }
@@ -46,6 +49,10 @@ faqContainer.addEventListener('click', function (e) {
   answerArrow.classList.add('arrow-spin');
 });
 
+answers.forEach(a => {
+  console.log(a);
+});
+
 featuresBtnContainer.addEventListener('click', function (e) {
   e.preventDefault();
 
@@ -53,6 +60,14 @@ featuresBtnContainer.addEventListener('click', function (e) {
   const feature = e.target;
   const featureNumber = feature.dataset.feature;
   if (!featureNumber) return;
+
+  featuresBtns.forEach(button => {
+    if (button.dataset.feature == featureNumber) {
+      button.classList.add('red-color');
+    } else {
+      button.classList.remove('red-color');
+    }
+  });
 
   //remove and add hidden class to features containers
   featuresContainers.forEach(f => {

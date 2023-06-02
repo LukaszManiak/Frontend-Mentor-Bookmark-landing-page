@@ -435,16 +435,10 @@ section.section-4 {
       img {
         width: 25px;
       }
-      svg path {
-        transition: stroke 0.15s;
-      }
     }
 
     .question:hover p {
       color: color(softRed);
-    }
-    .question:hover svg path {
-      stroke: color(softRed);
     }
 
     .last-question {
@@ -788,6 +782,14 @@ nav {
   background-color: white;
   border: solid 1px color(veryDarkBlue);
   color: color(veryDarkBlue);
+}
+
+section.section-2
+  .section-2-info-container
+  .select-btns-container
+  button.red-color {
+  color: color(softRed);
+  border-bottom: solid 3px color(softRed);
 }
 
 .arrow-spin {
