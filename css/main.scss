@@ -52,7 +52,7 @@ section.section-1 {
   margin-top: 98px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: relative;
   z-index: 10;
@@ -75,8 +75,7 @@ section.section-1 {
   .section-1-info-container {
     display: flex;
     flex-direction: column;
-    padding: 0 4rem 0 15rem;
-    width: 60%;
+    width: 40%;
     gap: 2rem;
 
     h1 {
@@ -185,7 +184,7 @@ section.section-2 {
       position: absolute;
       z-index: 9;
       left: -70px;
-      bottom: 0px;
+      bottom: -30px;
       width: 30%;
       height: 80%;
       border-top-right-radius: 150px;
