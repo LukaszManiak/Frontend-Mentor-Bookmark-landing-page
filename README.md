@@ -11,7 +11,7 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
   - [Links](#links)
   - [Built with](#built-with)
 - [Author](#author)
-- [Screenshot](#screenshot)
+- [Screenshots](#screenshot)
 
 ## Overview
 
