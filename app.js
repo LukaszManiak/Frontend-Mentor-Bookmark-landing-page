@@ -164,14 +164,14 @@ const setInputStyles = function (isWrong) {
     alertBar.style.backgroundColor = 'hsl(0, 94%, 66%)';
     alertIcon.style.backgroundColor = 'hsl(0, 94%, 66%)';
     alertIcon.innerText = '!';
-    alertBtn.style.marginTop = '25px';
+    alertBtn.style.marginTop = '35px';
   }
   if (!isWrong) {
     alertIcon.innerText = '✔';
     alertIcon.style.backgroundColor = 'hsl(229, 31%, 21%)';
 
     alertBar.style.backgroundColor = 'hsl(229, 31%, 21%)';
-    alertBtn.style.marginTop = '25px';
+    alertBtn.style.marginTop = '35px';
   }
   alertBar.classList.remove('alert');
   alertIcon.classList.remove('alert');

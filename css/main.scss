@@ -518,7 +518,7 @@ section.section-5 {
         transform: translate(-50%, 0%);
         background-color: color(softRed);
         width: 104%;
-        height: 65px;
+        height: 80px;
         border-radius: 10px;
 
         p {
@@ -528,11 +528,11 @@ section.section-5 {
           font-size: 1.6rem;
           text-align: start;
           @include desktop {
-            font-size: 1.4rem;
-            margin-bottom: -2px;
+            font-size: 1.5rem;
+            margin-bottom: -4px;
           }
           @include desktop {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             margin-bottom: -2px;
           }
         }
