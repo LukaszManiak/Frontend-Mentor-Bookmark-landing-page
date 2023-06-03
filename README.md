@@ -8,10 +8,10 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
 
 - [Overview](#overview)
 - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built with](#built-with)
 - [Author](#author)
+- [Screenshot](#screenshot)
 
 ## Overview
 
@@ -24,15 +24,6 @@ Users should be able to:
 <!-- - Receive an error message when the newsletter form is submitted if:
   - The input field is empty
   - The email address is not formatted correctly -->
-
-### Screenshot
-
-![Screenshot 1](/screenshots/screen1.jpeg?raw=true 'Screenshot 1 (desktop)')
-![Screenshot 2](/screenshots/screen2.jpeg?raw=true 'Screenshot 2 (mobile)')
-![Screenshot 4](/screenshots/screen4.jpg?raw=true 'Screenshot 4')
-![Screenshot 4](/screenshots/screen6.jpeg?raw=true 'Screenshot 5')
-![Screenshot 4](/screenshots/screen8.jpeg?raw=true 'Screenshot 6')
-![Screenshot 4](/screenshots/screen9.jpeg?raw=true 'Screenshot 7')
 
 ### Links
 
@@ -50,3 +41,12 @@ Users should be able to:
 
 - Frontend Mentor - [Lukasz Maniak](https://www.frontendmentor.io/profile/Mejniak)
 - GitHub- [Lukasz Maniak](https://github.com/Mejniak)
+
+### Screenshot
+
+![Screenshot 1](/screenshots/screen1.jpeg?raw=true 'Screenshot 1 (desktop)')
+![Screenshot 2](/screenshots/screen2.jpeg?raw=true 'Screenshot 2 (mobile)')
+![Screenshot 4](/screenshots/screen4.jpg?raw=true 'Screenshot 4')
+![Screenshot 4](/screenshots/screen6.jpeg?raw=true 'Screenshot 5')
+![Screenshot 4](/screenshots/screen8.jpeg?raw=true 'Screenshot 6')
+![Screenshot 4](/screenshots/screen9.jpeg?raw=true 'Screenshot 7')
