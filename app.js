@@ -17,6 +17,12 @@ const navLinks = document.querySelector('.nav-links');
 const navLogo = document.querySelector('.nav-bookmark-logo');
 const navWhiteLogo = document.querySelector('.nav-bookmark-white-logo');
 const navCloseImg = document.querySelector('.nav-close-img');
+const input = document.querySelector('.input');
+const form = document.querySelector('.input-form');
+const alertIcon = document.querySelector('.alert-icon');
+const alertBar = document.querySelector('.alert-bar');
+const alertP = document.querySelector('.alert-p');
+const alertBtn = document.querySelector('.inputBtn');
 
 faqContainer.addEventListener('click', function (e) {
   e.preventDefault();
@@ -93,7 +99,7 @@ navBtn.addEventListener('click', function () {
   navMenuBackground.classList.toggle('hidden');
   navBtn.classList.toggle('blue-background');
   navLinks.classList.toggle('show');
-  navElementsStyling();
+  navElementsStyles();
 });
 
 //menu icon
@@ -102,8 +108,8 @@ let isOpen = false;
 navWhiteLogo.classList.add('hidden');
 navCloseImg.classList.add('hidden');
 
-const navElementsStyling = function () {
-  //changing navBtn
+const navElementsStyles = function () {
+  //changing navBtn and bookmark logo when button is activated
   if (!isOpen) {
     navLogo.classList.add('hidden');
     navImg.classList.add('hidden');
@@ -118,7 +124,7 @@ const navElementsStyling = function () {
   isOpen = !isOpen;
 };
 
-//setting appropriate bookmark logo
+//setting appropriate bookmark logo depending of the screen size
 window.addEventListener('resize', function () {
   if (isOpen == true && window.innerWidth >= 1100) {
     navLogo.classList.remove('hidden');
@@ -129,3 +135,47 @@ window.addEventListener('resize', function () {
     navWhiteLogo.classList.remove('hidden');
   }
 });
+
+//input checking
+const checkInput = function (e) {
+  e.preventDefault();
+  let inputVal = input.value;
+  const valid = /\S+@\S+\.\S+/;
+  //empty input
+
+  if (!inputVal) {
+    alertP.innerText = 'Whoops! It looks like you forgot to add your email.';
+    setInputStyles(true);
+    //wrong email adress
+  } else if (!valid.test(inputVal)) {
+    alertP.innerText = 'Please provide a valid email address!';
+    setInputStyles(true);
+  } else {
+    //correct adress
+
+    alertP.innerText = 'Thank you for your email adress!';
+    setInputStyles(false);
+  }
+};
+
+//setting input styles
+const setInputStyles = function (isWrong) {
+  if (isWrong) {
+    alertBar.style.backgroundColor = 'hsl(0, 94%, 66%)';
+    alertIcon.style.backgroundColor = 'hsl(0, 94%, 66%)';
+    alertIcon.innerText = '!';
+    alertBtn.style.marginTop = '25px';
+  }
+  if (!isWrong) {
+    alertIcon.innerText = '✔';
+    alertIcon.style.backgroundColor = 'hsl(229, 31%, 21%)';
+
+    alertBar.style.backgroundColor = 'hsl(229, 31%, 21%)';
+    alertBtn.style.marginTop = '25px';
+  }
+  alertBar.classList.remove('alert');
+  alertIcon.classList.remove('alert');
+};
+
+alertBtn.addEventListener('click', checkInput);
+form.addEventListener('submit', checkInput);

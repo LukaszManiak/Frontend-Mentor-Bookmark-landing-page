@@ -25,6 +25,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 section {
@@ -53,7 +54,7 @@ section.section-1 .img-back {
   z-index: 9;
   right: 0;
   bottom: 0;
-  width: 30%;
+  width: 35%;
   height: 60%;
   border-top-left-radius: 150px;
   border-bottom-left-radius: 150px;
@@ -475,39 +476,117 @@ section.section-5 h3 {
   font-size: 3rem;
   text-align: center;
 }
-section.section-5 .input-container {
-  width: 100%;
+section.section-5 .newsletter-container {
+  width: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section.section-5 .input-container input {
-  width: 20%;
+section.section-5 .newsletter-container .input-form {
+  width: 60%;
+  margin-right: 20px;
+  position: relative;
+  z-index: 9;
+}
+section.section-5 .newsletter-container .input-form .alert-icon {
+  z-index: 10;
+  top: 10%;
+  right: 10px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: hsl(0, 94%, 66%);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+section.section-5 .newsletter-container .input-form .alert-bar {
+  position: absolute;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  z-index: -8;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: hsl(0, 94%, 66%);
+  width: 104%;
+  height: 65px;
+  border-radius: 10px;
+}
+section.section-5 .newsletter-container .input-form .alert-bar p {
+  margin-bottom: -5px;
+  width: 100%;
+  font-size: 1.6rem;
+  text-align: start;
+}
+@media (max-width: 1100px) {
+  section.section-5 .newsletter-container .input-form .alert-bar p {
+    font-size: 1.4rem;
+    margin-bottom: -2px;
+  }
+}
+@media (max-width: 1100px) {
+  section.section-5 .newsletter-container .input-form .alert-bar p {
+    font-size: 1.4rem;
+    margin-bottom: -2px;
+  }
+}
+@media (max-width: 770px) {
+  section.section-5 .newsletter-container .input-form .alert-bar {
+    top: -15%;
+    width: 102%;
+  }
+}
+section.section-5 .newsletter-container .input-form input {
+  width: 100%;
   padding: 1rem 2rem;
   border: none;
   border-radius: 10px;
-  margin-right: 20px;
 }
 @media (max-width: 770px) {
-  section.section-5 .input-container input {
+  section.section-5 .newsletter-container .input-form input {
     margin: 0;
-    width: 80%;
-  }
-}
-section.section-5 .input-container button {
-  width: 10%;
-}
-@media (max-width: 770px) {
-  section.section-5 .input-container button {
-    width: 80%;
   }
 }
 @media (max-width: 770px) {
-  section.section-5 .input-container {
+  section.section-5 .newsletter-container .input-form {
+    margin: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+section.section-5 .newsletter-container button {
+  width: 30%;
+}
+@media (max-width: 770px) {
+  section.section-5 .newsletter-container button {
+    width: 100%;
+  }
+}
+@media (max-width: 1100px) {
+  section.section-5 .newsletter-container {
+    width: 60%;
+  }
+}
+@media (max-width: 770px) {
+  section.section-5 .newsletter-container {
+    width: 60%;
     flex-direction: column;
     align-items: center;
     gap: 15px;
   }
+}
+
+section.section-5 .newsletter-container .input-form .alert-bar.alert,
+section.section-5 .newsletter-container .input-form .alert-icon.alert {
+  display: none;
 }
 
 footer {
@@ -602,7 +681,7 @@ footer p a {
 nav {
   position: absolute;
   top: 0;
-  z-index: 12;
+  z-index: 120;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -610,7 +689,7 @@ nav {
   padding: 30px 0px;
 }
 nav div {
-  z-index: 12;
+  z-index: 120;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -623,7 +702,7 @@ nav div {
   }
 }
 nav .nav-links {
-  z-index: 12;
+  z-index: 120;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -714,11 +793,12 @@ nav .nav-btn:hover {
   position: absolute;
   top: 0;
   left: -1.7vw;
-  z-index: 10;
+  z-index: 100;
   width: 100vw;
-  height: 100vh;
+  height: 40vh;
   background-color: hsl(229, 31%, 21%);
   opacity: 0.8;
+  overflow: hidden;
 }
 @media (min-width: 1100px) {
   .nav-bg {
@@ -733,7 +813,7 @@ nav .nav-btn:hover {
 }
 
 .nav-links.show {
-  z-index: 12;
+  z-index: 120;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
