@@ -1,44 +1,46 @@
 # Frontend Mentor - Bookmark landing page solution
 
-## Mid-work
+## Welcome 🤓
+
+This is a solution to the [Bookmark landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158) with some small effects.
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-    <!-- - [Screenshot](#screenshot) -->
-    <!-- - [Links](#links) -->
+    - [Screenshot](#screenshot)
+    - [Links](#links)
   - [Built with](#built-with)
-  <!-- - [Author](#author) -->
+  - [Author](#author)
 
 ## Overview
 
-<!-- ### The challenge
+### The challenge
 
 Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Receive an error message when the newsletter form is submitted if:
+<!-- - Receive an error message when the newsletter form is submitted if:
   - The input field is empty
   - The email address is not formatted correctly -->
 
-<!-- ### Screenshot
+### Screenshot
 
-![Screenshot 1](/screenshots/advice-generator-app-ss1.jpg?raw=true 'Screenshot 1')
-![Screenshot 2](/screenshots/advice-generator-app-ss2.jpeg?raw=true 'Screenshot 2')
-![Screenshot 3](/screenshots/advice-generator-app-ss3.jpeg?raw=true 'Screenshot 3') -->
+![Screenshot 1](/screenshots/screen1.jpg?raw=true 'Screenshot 1 (desktop)')
+![Screenshot 2](/screenshots/screen2.jpeg?raw=true 'Screenshot 2 (mobile)')
+![Screenshot 3](/screenshots/screen3.jpeg?raw=true 'Screenshot 3')
+![Screenshot 3](/screenshots/screen4.jpeg?raw=true 'Screenshot 3')
 
-<!-- ### Links
+### Links
 
-- Solution URL: [GitHub](https://github.com/Mejniak/Frontend-Mentor---Advice-generator-app)
-- Live Site URL: [Netlify](https://advicegeneratorapp-lukas.netlify.app/) -->
+- Solution URL: [GitHub](https://github.com/Mejniak/Frontend-Mentor-Bookmark-landing-page)
+- Live Site URL: [Netlify](https://advicegeneratorapp-lukas.netlify.app/)
 
 ### Built with
 
 - Semantic HTML5 markup
   -SCSS
-- CSS custom properties
 - Flexbox
 - JavaScript
 
