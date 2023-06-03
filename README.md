@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/Mejniak/Frontend-Mentor-Bookmark-landing-page)
-- Live Site URL: [Netlify](https://advicegeneratorapp-lukas.netlify.app/)
+- Live Site URL: [Netlify](https://bookmarklanding-lukas.netlify.app/)
 
 ### Built with
 
