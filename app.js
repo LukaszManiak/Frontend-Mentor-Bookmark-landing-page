@@ -15,6 +15,8 @@ const navMenuBackground = document.querySelector('.nav-bg');
 const navImg = document.querySelector('.nav-img');
 const navLinks = document.querySelector('.nav-links');
 const navLogo = document.querySelector('.nav-bookmark-logo');
+const navWhiteLogo = document.querySelector('.nav-bookmark-white-logo');
+const navCloseImg = document.querySelector('.nav-close-img');
 
 faqContainer.addEventListener('click', function (e) {
   e.preventDefault();
@@ -97,26 +99,33 @@ navBtn.addEventListener('click', function () {
 //menu icon
 
 let isOpen = false;
+navWhiteLogo.classList.add('hidden');
+navCloseImg.classList.add('hidden');
 
 const navElementsStyling = function () {
   //changing navBtn
-  !isOpen
-    ? (navImg.src = 'images/icon-close.svg')
-    : (navImg.src = 'images/icon-hamburger.svg');
-
-  //changing bookmark logo
-  !isOpen
-    ? (navLogo.src = 'images/logo-bookmark-white.svg')
-    : (navLogo.src = 'images/logo-bookmark.svg');
+  if (!isOpen) {
+    navLogo.classList.add('hidden');
+    navImg.classList.add('hidden');
+    navWhiteLogo.classList.remove('hidden');
+    navCloseImg.classList.remove('hidden');
+  } else {
+    navLogo.classList.remove('hidden');
+    navImg.classList.remove('hidden');
+    navWhiteLogo.classList.add('hidden');
+    navCloseImg.classList.add('hidden');
+  }
   isOpen = !isOpen;
 };
 
 //setting appropriate bookmark logo
 window.addEventListener('resize', function () {
   if (isOpen == true && window.innerWidth >= 1100) {
-    navLogo.src = 'images/logo-bookmark.svg';
+    navLogo.classList.remove('hidden');
+    navWhiteLogo.classList.add('hidden');
   }
   if (isOpen == true && window.innerWidth <= 1100) {
-    navLogo.src = 'images/logo-bookmark-white.svg';
+    navLogo.classList.add('hidden');
+    navWhiteLogo.classList.remove('hidden');
   }
 });
