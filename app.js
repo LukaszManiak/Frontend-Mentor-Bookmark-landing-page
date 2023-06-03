@@ -136,10 +136,11 @@ window.addEventListener('resize', function () {
   }
 });
 
-//input checking
+//simple input checking
 const checkInput = function (e) {
   e.preventDefault();
   let inputVal = input.value;
+
   const valid = /\S+@\S+\.\S+/;
   //empty input
 
