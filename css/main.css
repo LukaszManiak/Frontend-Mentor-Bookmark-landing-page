@@ -143,12 +143,12 @@ nav .nav-btn:hover {
 }
 
 .nav-bg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -1.7vw;
   z-index: 100;
   width: 100vw;
-  height: 45vh;
+  height: 100vh;
   background-color: hsl(229, 31%, 21%);
   opacity: 0.8;
   overflow: hidden;
