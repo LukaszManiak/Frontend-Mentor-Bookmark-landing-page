@@ -126,11 +126,11 @@ const navElementsStyles = function () {
 
 //setting appropriate bookmark logo depending of the screen size
 window.addEventListener('resize', function () {
-  if (isOpen == true && window.innerWidth >= 1100) {
+  if (isOpen == true && window.innerWidth > 1100) {
     navLogo.classList.remove('hidden');
     navWhiteLogo.classList.add('hidden');
   }
-  if (isOpen == true && window.innerWidth <= 1100) {
+  if (isOpen == true && window.innerWidth < 1100) {
     navLogo.classList.add('hidden');
     navWhiteLogo.classList.remove('hidden');
   }

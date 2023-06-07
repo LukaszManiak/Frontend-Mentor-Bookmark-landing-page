@@ -8,6 +8,7 @@ $colors: (
 );
 
 $desktop: 1100px;
+$hide: 1101px;
 $mobile: 770px;
 $smaller: 660px;
 
@@ -18,7 +19,7 @@ $smaller: 660px;
 }
 
 @mixin hide {
-  @media (min-width:#{$desktop}) {
+  @media (min-width:#{$hide}) {
     @content;
   }
 }
@@ -75,7 +76,7 @@ nav {
     margin-left: 10%;
     width: 80%;
 
-    @include desktop() {
+    @include desktop {
       margin-left: 0%;
     }
   }
