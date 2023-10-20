@@ -145,7 +145,7 @@ nav .nav-btn:hover {
 .nav-bg {
   position: fixed;
   top: 0;
-  left: -1.7vw;
+  left: 0vw;
   z-index: 100;
   width: 100vw;
   height: 100vh;
